@@ -1,0 +1,40 @@
+.Card {
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &-title {
+        margin-top: 20px;
+    }
+
+    &-img {
+        border: 2px solid $text-white;
+        border-radius: 8px;
+    }
+
+    &-img:hover {
+        transform: scale(1.1);
+    }
+
+    &-inside {
+        margin: 10px;
+    }
+
+    &-text {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &-box {
+        background-color: $text-black;
+        border: 2px solid $blue-lite;
+        border-radius: 8px;
+        color: $text-white;
+        height: auto;
+        margin: 10px;
+        width: 347px;
+    }
+}
