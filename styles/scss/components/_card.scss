@@ -1,4 +1,13 @@
 .Card {
+    background-color: $text-black;
+    border: 2px solid $hard-red;
+    border-radius: 8px;
+    color: $text-white;
+    height: auto;
+    margin: 10px;
+    width: 278px;
+
+
     &-container {
         display: flex;
         flex-wrap: wrap;
@@ -23,18 +32,8 @@
     }
 
     &-text {
-        display: flex !important;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-    }
-
-    &-box {
-        background-color: $text-black;
-        border: 2px solid $blue-lite;
-        border-radius: 8px;
-        color: $text-white;
-        height: auto;
-        margin: 10px;
-        width: 347px;
     }
 }

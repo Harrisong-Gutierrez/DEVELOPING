@@ -1,22 +1,15 @@
-import Header from "../header";
-import Footer from "../footer";
-import Image from "next/image";
+import Footer from "../Footer";
 import PropTypes from "prop-types";
+import Header from "../Header";
 
 const Layout = (props) => {
   const { children } = props;
+
   return (
     <div>
       <Header />
-      <Image
-        src="/banner.jpg"
-        width={1910}
-        height={400}
-        alt="banner"
-        layout="responsive"
-        priority
-      />
-      <div className="h-auto">{children}</div>
+      <div className="Banner-image" />
+      {children}
       <Footer />
     </div>
   );

@@ -1,1 +1,11 @@
-
+.Banner-image {
+    &::before {
+        content: "";
+        background-image: url("/banner.jpg");
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
