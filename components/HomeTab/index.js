@@ -43,6 +43,8 @@ const HomeTab = () => {
     );
   };
 
+  console.log(entities[activeTab].title);
+
   const renderTabsList = (title) => {
     switch (title) {
       case "Characters":
@@ -70,7 +72,7 @@ const HomeTab = () => {
         />
       );
     });
-    return < >{tabButtons}</>;
+    return <>{tabButtons}</>;
   };
 
   const renderTabPanel = () => {

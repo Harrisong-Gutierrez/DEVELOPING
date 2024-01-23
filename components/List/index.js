@@ -20,6 +20,7 @@ const List = ({ fetchData }) => {
       return data.map((item) => {
         return (
           <Card
+            id={item.id}
             key={item.id}
             width={255}
             height={330}
