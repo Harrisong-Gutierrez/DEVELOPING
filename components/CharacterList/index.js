@@ -1,22 +1,32 @@
+import { useGlobalState } from "@/context/ListStateContext";
 import List from "../List";
-import getCharacterData from "@/services/characters";
-import  { useState, useEffect } from 'react';
+import getComicsData from "@/services/comics";
+import { useState, useEffect } from "react";
 
-const CharactersList = () => {
-  const [characterActivo, setCharacterActivo] = useState(0);
-
-  console.log(characterActivo)
+const ComicsList = () => {
+  const { comicActivo, setComicActivo, characterActivo, setCharacterActivo, storyActivo, setStoryActivo } = useGlobalState();
 
   useEffect(() => {
+    setComicActivo(1);
+
+   
     return () => {
-      setCharacterActivo(0);
+      setComicActivo(1);
+      setCharacterActivo(null);
+      setStoryActivo(null);
     };
   }, []);
 
   useEffect(() => {
-  }, [characterActivo]);
+  
+  }, [comicActivo]);
 
-  return <List fetchData={getCharacterData} />;
+ 
+  if (comicActivo !== 1 && characterActivo === null && storyActivo === null) {
+    return null;
+  }
+
+  return <List fetchData={getComicsData} />;
 };
 
-export default CharactersList;
+export default ComicsList;

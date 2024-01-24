@@ -7,10 +7,10 @@ import StoriesList from "../StoriesList";
 import Button from "../Button";
 import CharactersList from "../CharacterList";
 import { v4 } from "uuid";
-import { useTabContext } from "@/context/TabContext";
+;
 
 const HomeTab = () => {
-  const [activeTab, setActiveTab] = useTabContext();
+  const [activeTab, setActiveTab] = useState(0);
 
   const renderPanel = (entity) => {
     const { paragraph1, paragraph2, imageLink } = entity;

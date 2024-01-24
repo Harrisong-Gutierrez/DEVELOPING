@@ -2,40 +2,48 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { requestData } from "@/services/request";
 import Card from "@/components/Card";
-import { useTabContext } from "@/context/TabContext";
 import Layout from "@/components/Layout";
+import { useGlobalState } from "@/context/ListStateContext";
 
 const IndividualItem = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [activeTab, setActiveTab] = useTabContext();
+  const { storyActivo, setStoryActivo, characterActivo, setCharacterActivo, comicActivo, setComicActivo } = useGlobalState();
   const [item, setItem] = useState(null);
 
+  console.log(storyActivo,characterActivo,comicActivo)
 
 
-  const handleTabIndex = (index) => {
-    switch (index) {
-      case 0:
-        return "characters"
-        break;
-      case 1:
-        return "comics";
-        break;
-      case 2:
-        return "stories";
-        break;
-      default:
-        console.log("Índice no reconocido");
+
+  // const handleActiveList = (characterActivo, comicActivo, storyActivo) => {
+  //   if (characterActivo === 0) {
+  //     return "characters";
+  //   } else if (comicActivo === 1) {
+  //     return "comics";
+  //   } else if (storyActivo === 2) {
+  //     return "stories";
+  //   } else {
+  //     console.log("No active tab found");
+  //   }
+  // };
+
+  const handleActiveList = (characterActivo, comicActivo, storyActivo) => {
+    if (characterActivo === 0) {
+      return "characters";
+    } else if (comicActivo === 1) {
+      return "comics";
+    } else if (storyActivo === 2) {
+      return "stories";
+    } else {
+      console.log("No active tab found");
     }
   };
-
-
-
+  
 
   useEffect(() => {
     const fetchItem = async () => {
       try {
-        const { data } = await requestData(`/${handleTabIndex(activeTab)}/${id}`);
+        const { data } = await requestData(`/${handleActiveList(characterActivo, comicActivo, storyActivo)}/${id}`);
 
         setItem(data.data.results[0]);
       } catch (error) {
