@@ -55,7 +55,7 @@ Card.propTypes = {
   name: PropTypes.string.isRequired,
   modified: PropTypes.string,
   description: PropTypes.string,
-  id: PropTypes.string,
+  id: PropTypes.number,
 };
 
 Card.defaultProps = {

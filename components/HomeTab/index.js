@@ -7,9 +7,10 @@ import StoriesList from "../StoriesList";
 import Button from "../Button";
 import CharactersList from "../CharacterList";
 import { v4 } from "uuid";
+import { useTabContext } from "@/context/TabContext";
 
 const HomeTab = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useTabContext();
 
   const renderPanel = (entity) => {
     const { paragraph1, paragraph2, imageLink } = entity;
@@ -43,7 +44,7 @@ const HomeTab = () => {
     );
   };
 
-  console.log(entities[activeTab].title);
+
 
   const renderTabsList = (title) => {
     switch (title) {
@@ -58,22 +59,26 @@ const HomeTab = () => {
     }
   };
 
+
   const renderTabs = () => {
-    const tabButtons = [];
-    const resArr = entities.map((entity, index) => {
-      tabButtons.push(
-        <Button
-          key={v4()}
-          classSize={`Tabs-tab ${activeTab === index ? "Tabs-active" : ""} ${
-            index === 2 ? "Tabs-tab-border" : ""
-          }`}
-          onClick={() => setActiveTab(index)}
-          buttonText={entity.title}
-        />
-      );
-    });
-    return <>{tabButtons}</>;
+    if (!entities) {
+      return null; 
+    }
+  
+    const tabButtons = entities.map((entity, index) => (
+      <Button
+        key={v4()}
+        classSize={`Tabs-tab ${activeTab === index ? "Tabs-active" : ""} ${
+          index === 2 ? "Tabs-tab-border" : ""
+        }`}
+        onClick={() => setActiveTab(index)}
+        buttonText={entity.title}
+      />
+    ));
+  
+    return tabButtons;
   };
+  
 
   const renderTabPanel = () => {
     return (

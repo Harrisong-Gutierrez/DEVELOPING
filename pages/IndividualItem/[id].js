@@ -2,17 +2,40 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { requestData } from "@/services/request";
 import Card from "@/components/Card";
+import { useTabContext } from "@/context/TabContext";
+import Layout from "@/components/Layout";
 
 const IndividualItem = () => {
   const router = useRouter();
   const { id } = router.query;
-  const { title } = router.query;
+  const [activeTab, setActiveTab] = useTabContext();;
   const [item, setItem] = useState(null);
+
+
+
+  const handleTabIndex = (index) => {
+    switch (index) {
+      case 0:
+        return "characters"
+        break;
+      case 1:
+        return "comics";
+        break;
+      case 2:
+        return "stories";
+        break;
+      default:
+        console.log("Índice no reconocido");
+    }
+  };
+
+
+
 
   useEffect(() => {
     const fetchItem = async () => {
       try {
-        const { data } = await requestData(`/characters/${id}`);
+        const { data } = await requestData(`/${handleTabIndex(activeTab)}/${id}`);
 
         setItem(data.data.results[0]);
       } catch (error) {
@@ -26,7 +49,8 @@ const IndividualItem = () => {
   }, [id]);
 
   return (
-    <>
+   <Layout>
+     <div className="d-flex justify-content-center">
       {item ? (
         <Card
           id={item.id}
@@ -47,7 +71,8 @@ const IndividualItem = () => {
           <div className="spinner-border" role="status" />
         </div>
       )}
-    </>
+    </div>
+   </Layout>
   );
 };
 
