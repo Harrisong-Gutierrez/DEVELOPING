@@ -8,7 +8,7 @@ import Layout from "@/components/Layout";
 const IndividualItem = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [activeTab, setActiveTab] = useTabContext();;
+  const [activeTab, setActiveTab] = useTabContext();
   const [item, setItem] = useState(null);
 
 
