@@ -11,22 +11,6 @@ const IndividualItem = () => {
   const { storyActivo, setStoryActivo, characterActivo, setCharacterActivo, comicActivo, setComicActivo } = useGlobalState();
   const [item, setItem] = useState(null);
 
-  console.log(storyActivo,characterActivo,comicActivo)
-
-
-
-  // const handleActiveList = (characterActivo, comicActivo, storyActivo) => {
-  //   if (characterActivo === 0) {
-  //     return "characters";
-  //   } else if (comicActivo === 1) {
-  //     return "comics";
-  //   } else if (storyActivo === 2) {
-  //     return "stories";
-  //   } else {
-  //     console.log("No active tab found");
-  //   }
-  // };
-
   const handleActiveList = (characterActivo, comicActivo, storyActivo) => {
     if (characterActivo === 0) {
       return "characters";
@@ -39,7 +23,6 @@ const IndividualItem = () => {
     }
   };
   
-
   useEffect(() => {
     const fetchItem = async () => {
       try {

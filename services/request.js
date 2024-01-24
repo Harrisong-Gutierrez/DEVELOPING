@@ -18,6 +18,7 @@ export const requestData = async (endpointURL, queryParams) => {
         ...queryParams,
       },
     });
+    
     return response;
   } catch (error) {
     console.log(error);
