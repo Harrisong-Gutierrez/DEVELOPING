@@ -1,0 +1,64 @@
+.Offer {
+    width: 100%;
+    height: 539px;
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-content {
+        width: 328px;
+        height: 443px;
+        background-color: $white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        width: 296px;
+        height: 17px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $red;
+        font-size: 24px;
+        font-family: $fontNotoSelf;
+    }
+
+    &-copyBox {
+        width: 202px;
+        height: 40px;
+        border-radius: 6px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: $green 2px solid;
+        text-decoration: none;
+        gap: 5px;
+        color: $green;
+    }
+
+    &-subtitle {
+        display: block;
+        text-align: center;
+        color: $red;
+        font-family: $fontRalewayExtraBold;
+        font-size: 96px;
+        margin-bottom: 15px;
+
+        &-supplementary {
+            font-size: 16px;
+            line-height: 12px;
+            font-family: $fontRealwayBold;
+        }
+    }
+
+    &-percentage {
+        font-size: 42px;
+    }
+}
