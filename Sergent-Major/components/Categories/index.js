@@ -7,14 +7,16 @@ export const Categories = ({ title }) => {
   const renderCategory = () => {
     return categories.map((category) => {
       return (
-        <Category
-          key={v4()}
-          text={category.text}
-          alt={category.alt}
-          width={category.width}
-          height={category.height}
-          src={category.src}
-        />
+        <div>
+          <Category
+            key={v4()}
+            text={category.text}
+            alt={category.alt}
+            width={category.width}
+            height={category.height}
+            src={category.src}
+          />
+        </div>
       );
     });
   };

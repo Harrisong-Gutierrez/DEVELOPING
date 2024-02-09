@@ -1,0 +1,29 @@
+.Category {
+    height: 250px;
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+        height: 24px;
+        gap: 4px;
+    }
+
+    &-text {
+        font-size: 18px;
+        font-family: $fontRealwayBold;
+        color: $white;
+        line-height: 24px;
+    }
+
+    &-image {
+        vertical-align: revert;
+    }
+
+    &-icon {
+        color: $white;
+        width: 24px;
+        height: 24px;
+    }
+}

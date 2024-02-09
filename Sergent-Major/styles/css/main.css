@@ -9532,4 +9532,48 @@ h3, .h3, h2, .h2 {
   .CopyCode {
     gap: 12px; } }
 
+.Categories {
+  align-items: center;
+  background-color: #ff8c97;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 661px;
+  justify-content: center; }
+  .Categories-title {
+    color: #fdfefe;
+    font-family: "Denike Regular";
+    font-size: 24px;
+    height: 17px;
+    line-height: 30px;
+    text-align: center;
+    width: 328px; }
+  .Categories-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px; }
+
+.Category {
+  height: 250px; }
+  .Category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 24px;
+    gap: 4px; }
+  .Category-text {
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    color: #fdfefe;
+    line-height: 24px; }
+  .Category-image {
+    vertical-align: revert; }
+  .Category-icon {
+    color: #fdfefe;
+    width: 24px;
+    height: 24px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,7 @@ const Category = ({ text, height, width, alt, src }) => {
       />
       <div className="Category-content">
         <h3 className="Category-text">{text}</h3>
-        <FaRegArrowAltCircleRight />
+        <FaRegArrowAltCircleRight className="Category-icon" />
       </div>
     </div>
   );
