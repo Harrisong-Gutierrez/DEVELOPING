@@ -1,3 +1,4 @@
+import Categories from "@/components/Categories";
 import Header from "@/components/Header";
 import Offer from "@/components/Offer";
 import Head from "next/head";
@@ -24,6 +25,7 @@ export default function Home() {
           title="Membres Veepee"
           subtitle={`-10<span className="Offer-percentage">%</span> <span className="d-block Offer-subtitle-supplementary">SUPPLÉMENTAIRES</span>`}
         />
+        <Categories title="Découvrez la sélection" />
       </main>
     </>
   );
