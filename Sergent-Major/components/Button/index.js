@@ -2,12 +2,12 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 
 const Button = ({
-  textContent,
-  onClick,
-  href,
+  textContent = "",
+  onClick = () => {},
+  href = "",
   isRedirected = true,
-  children,
-  styleLink,
+  children = <></>,
+  styleLink = "",
 }) => {
   const handleClick = (event) => {
     if (!isRedirected) event.preventDefault();
