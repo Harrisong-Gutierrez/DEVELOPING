@@ -7,10 +7,12 @@ import Button from "@/components/Button";
 
 const CopyCodeBox = ({ text, onClick }) => {
   const [isTextCopied, setIsTextCopied] = useState(false);
+
   const handleCopyText = () => {
     setIsTextCopied(true);
     onClick();
   };
+
   return (
     <CopyToClipboard text={text}>
       <Button
@@ -28,7 +30,8 @@ const CopyCodeBox = ({ text, onClick }) => {
 };
 
 CopyCodeBox.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default CopyCodeBox;

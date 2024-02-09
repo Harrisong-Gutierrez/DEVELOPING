@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import CopyCodeBox from "./components/CopycodeBox";
 
-const CopyCode = ({ title, copyLabel, copiedLabel }) => {
+const CopyCode = ({ title, copyLabel, copiedLabel = "" }) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyText = () => {

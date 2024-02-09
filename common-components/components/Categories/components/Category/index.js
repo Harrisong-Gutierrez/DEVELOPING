@@ -2,7 +2,7 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
-const Category = ({ text = "", height, width, alt, src }) => {
+const Category = ({ text, height, width, alt, src }) => {
   return (
     <div className="Category">
       <Image
