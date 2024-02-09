@@ -1,0 +1,115 @@
+.Header {
+    background-color: $pink;
+    height: 100vh;
+    width: 100%;
+
+    &-cover {
+        background-image: $cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 116vw;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+    }
+
+    &-logo {
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 6px;
+        height: 184px;
+        position: absolute;
+        top: 32px;
+    }
+
+    &-container {
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-content {
+        align-items: center;
+        background-color: $white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        height: 198px;
+        justify-content: center;
+        width: 328px;
+    }
+
+    &-title {
+        color: $cozyRed;
+        font-family: $fontNotoSelf;
+        font-size: 34px;
+        max-width: 225px;
+        text-align: center;
+    }
+
+    &-paragraph {
+        color: $cosyPink;
+        font-family: $fontRaleway;
+        font-size: 14px;
+        height: auto;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        &-cover {
+            background-image: url(/head-img-x1.jpg);
+            background-position: center center;
+            height: 63%;
+            width: 100%;
+        }
+
+        &-container {
+            top: 90%;
+        }
+
+        &-content {
+            width: 500px;
+        }
+
+        &-img {
+            height: 92px;
+            width: 184px;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &-cover {
+            background-image: url(/head-img-x1.jpg);
+            background-position: center center;
+            background-size: revert-layer;
+            height: 75%;
+            width: 100%;
+        }
+
+        &-container {
+            top: 97%;
+        }
+
+        &-paragraph {
+            display: flex;
+        }
+
+        &-logo {
+            top: 50px;
+        }
+
+        &-content {
+            width: 708px;
+        }
+
+        &-img {
+            height: 92px;
+            width: 184px;
+        }
+    }
+}
