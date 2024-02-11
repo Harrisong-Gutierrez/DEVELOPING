@@ -9503,10 +9503,6 @@ h3, .h3, h2, .h2 {
   .Offer-percentage {
     font-size: 42px; }
 
-@media (min-width: 768px) {
-  .Offer {
-    padding-bottom: 337px; } }
-
 @media (min-width: 992px) {
   .Offer {
     padding-bottom: 100px; } }
@@ -9554,6 +9550,15 @@ h3, .h3, h2, .h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px; }
+  @media (min-width: 992px) {
+    .Categories-title {
+      margin-bottom: 40px; }
+    .Categories-content {
+      gap: 24px; } }
+
+@media (min-width: 992px) {
+  .Categorsie {
+    margin-bottom: 40px; } }
 
 .Category {
   height: 250px; }
@@ -9561,7 +9566,7 @@ h3, .h3, h2, .h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 160px;
+    width: 100%;
     height: 24px;
     gap: 4px; }
   .Category-text {
@@ -9575,5 +9580,12 @@ h3, .h3, h2, .h2 {
     color: #fdfefe;
     width: 24px;
     height: 24px; }
+  @media (min-width: 992px) {
+    .Category-image {
+      width: 220px;
+      height: 278px; }
+    .Category-text {
+      line-height: 30px;
+      font-size: 24px; } }
 
 /*# sourceMappingURL=main.css.map */

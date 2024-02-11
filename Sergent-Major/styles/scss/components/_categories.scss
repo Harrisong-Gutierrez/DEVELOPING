@@ -24,4 +24,21 @@
         justify-content: center;
         gap: 8px;
     }
+
+    @include media-breakpoint-up(lg) {
+    &-title {
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        gap: 24px;
+    }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Categorsie {
+        margin-bottom: 40px;
+    }
+
 }
