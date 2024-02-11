@@ -9556,13 +9556,9 @@ h3, .h3, h2, .h2 {
     .Categories-content {
       gap: 24px; } }
 
-@media (min-width: 768px) {
-  .Categorsie {
-    margin-bottom: 40px; } }
-
 @media (min-width: 992px) {
-  .Categorsie {
-    margin-bottom: 40px; } }
+  .Categories {
+    padding-bottom: 40px; } }
 
 .Category {
   height: 250px; }

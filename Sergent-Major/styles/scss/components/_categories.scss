@@ -34,20 +34,15 @@
         gap: 24px;
     }
     }
-}
 
-@include media-breakpoint-up(md) {
-    .Categorsie {
-        margin-bottom: 40px;
-    }
 
 }
+
 
 @include media-breakpoint-up(lg) {
-    .Categorsie {
-        margin-bottom: 40px;
+    .Categories {
+        padding-bottom: 40px;
     }
-
 }
 
 
