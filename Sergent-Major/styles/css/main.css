@@ -9389,7 +9389,7 @@ h3, .h3, h2, .h2 {
     .Header-cover {
       background-image: url(/head-img-x1.jpg);
       background-position: center center;
-      background-size: revert-layer;
+      background-size: cover;
       height: 75%;
       width: 100%; }
     .Header-container {
@@ -9540,7 +9540,7 @@ h3, .h3, h2, .h2 {
     color: #fdfefe;
     font-family: "Denike Regular";
     font-size: 24px;
-    height: 17px;
+    height: auto;
     line-height: 30px;
     text-align: center;
     width: 328px; }
@@ -9555,6 +9555,10 @@ h3, .h3, h2, .h2 {
       margin-bottom: 40px; }
     .Categories-content {
       gap: 24px; } }
+
+@media (min-width: 768px) {
+  .Categorsie {
+    margin-bottom: 40px; } }
 
 @media (min-width: 992px) {
   .Categorsie {
@@ -9580,12 +9584,17 @@ h3, .h3, h2, .h2 {
     color: #fdfefe;
     width: 24px;
     height: 24px; }
+  @media (min-width: 768px) {
+    .Category {
+      background-size: cover; } }
   @media (min-width: 992px) {
     .Category-image {
       width: 220px;
       height: 278px; }
     .Category-text {
       line-height: 30px;
-      font-size: 24px; } }
+      font-size: 24px; }
+    .Category-cover {
+      background-size: cover; } }
 
 /*# sourceMappingURL=main.css.map */

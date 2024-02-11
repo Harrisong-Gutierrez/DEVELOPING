@@ -65,6 +65,7 @@
             background-position: center center;
             height: 63%;
             width: 100%;
+            
         }
 
         &-container {
@@ -86,7 +87,7 @@
         &-cover {
             background-image: url(/head-img-x1.jpg);
             background-position: center center;
-            background-size: revert-layer;
+            background-size: cover;
             height: 75%;
             width: 100%;
         }
