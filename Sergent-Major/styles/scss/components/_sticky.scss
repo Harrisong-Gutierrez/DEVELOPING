@@ -1,0 +1,47 @@
+.Sticky {
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+
+    &-text {
+        font-size: 9px;
+        font-family: $fontRaleway;
+        color: $green;
+        width: 187px;
+        height: auto;
+    }
+
+    &-main {
+        width: 328px;
+        height: 58px;
+        border-radius: 4px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-content {
+        width: 296px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    &-button {
+        width: 103px;
+        height: 38px;
+        background-color: $red;
+        border-radius: 2px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: $white;
+        font-family: $fontHKGroteskBold;
+    }
+}

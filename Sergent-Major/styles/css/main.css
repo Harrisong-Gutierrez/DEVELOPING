@@ -9327,6 +9327,12 @@ figure {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'HKGrotesk Regular';
+  src: url("/fonts/HKGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
 .Header {
   background-color: #ff8c97;
   height: 100vh;
@@ -9612,5 +9618,44 @@ figure {
   @media (min-width: 992px) {
     .Gallery-image {
       width: 950px; } }
+
+.Sticky {
+  background-color: #ff8c97;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 300px; }
+  .Sticky-text {
+    font-size: 9px;
+    font-family: "Raleway Regular";
+    color: #767676;
+    width: 187px;
+    height: auto; }
+  .Sticky-main {
+    width: 328px;
+    height: 58px;
+    border-radius: 4px;
+    background-color: #fdfefe;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .Sticky-content {
+    width: 296px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; }
+  .Sticky-button {
+    width: 103px;
+    height: 38px;
+    background-color: #ff4747;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fdfefe;
+    font-family: "HKGrotesk Bold"; }
 
 /*# sourceMappingURL=main.css.map */

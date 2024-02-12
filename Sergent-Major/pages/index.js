@@ -29,7 +29,9 @@ export default function Home() {
         />
         <Categories title="Découvrez la sélection" />
         <Gallery alt="gallry-img" />
-        <Sticky text="Jusqu'à -40% et 10% supplémentaires avec le code VEEPEEJSM23" />
+        <Sticky
+          text={`<span className="d-block"> Jusqu'à -40% et 10%</span>supplémentaires avec le code VEEPEEJSM23`}
+        />
       </main>
     </>
   );
