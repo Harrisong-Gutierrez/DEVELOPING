@@ -9597,27 +9597,20 @@ figure {
       background-size: cover; } }
 
 .Gallery {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   background-color: #ff8c97;
-  height: auto; }
+  padding-bottom: 48px; }
   .Gallery-content {
-    height: 328px;
-    width: 328px; }
+    width: 100%;
+    text-align: center; }
   .Gallery-image {
     height: 328px;
     width: 328px; }
-  @media (min-width: 992px) {
-    .Gallery-content {
-      width: 1440px;
-      height: 808px;
-      display: flex; }
+  @media (min-width: 768px) {
     .Gallery-image {
-      height: 100%;
-      width: 100%;
-      max-width: 952px;
-      margin-left: auto;
-      margin-right: auto; } }
+      height: auto;
+      width: 653px; } }
+  @media (min-width: 992px) {
+    .Gallery-image {
+      width: 950px; } }
 
 /*# sourceMappingURL=main.css.map */

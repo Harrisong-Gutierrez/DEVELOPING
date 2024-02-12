@@ -1,28 +1,25 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 
-const Gallery = ({ src, height, width, alt }) => {
+const Gallery = ({ alt }) => {
   return (
-    <div className="Gallery">
+    <section className="Gallery">
       <figure className="Gallery-content">
         <Image
           className="Gallery-image"
-          height={height}
+          height={328}
+          width={328}
           alt={alt}
-          width={width}
           priority
-          src={src}
+          src="/gallery.png"
         />
       </figure>
-    </div>
+    </section>
   );
 };
 
 Gallery.propTypes = {
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
   alt: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
 };
 
 export default Gallery;

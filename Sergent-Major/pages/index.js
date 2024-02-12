@@ -28,7 +28,7 @@ export default function Home() {
           subtitle={`-10<span className="Offer-percentage">%</span> <span className="d-block Offer-subtitle-supplementary">SUPPLÉMENTAIRES</span>`}
         />
         <Categories title="Découvrez la sélection" />
-        <Gallery alt="gallry-img" height={328} width={328} src="/gallry.png" />
+        <Gallery alt="gallry-img" />
         <Sticky text="Jusqu'à -40% et 10% supplémentaires avec le code VEEPEEJSM23" />
       </main>
     </>

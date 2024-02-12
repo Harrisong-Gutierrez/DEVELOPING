@@ -1,13 +1,10 @@
 .Gallery {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     background-color: $pink;
-    height: auto;
+    padding-bottom: 48px;
 
     &-content {
-        height: 328px;
-        width: 328px;
+        width: 100%;
+        text-align: center;
     }
 
     &-image {
@@ -15,19 +12,17 @@
         width: 328px;
     }
 
-    @include media-breakpoint-up(lg) {
-        &-content {
-            width: 1440px;
-            height: 808px;
-            display: flex;
-        }
-
+    @include media-breakpoint-up(md) {
         &-image {
-            height: 100%;
-            width: 100%;
-            max-width: 952px;
-            margin-left: auto;
-            margin-right: auto;
+            height: auto;
+            width: 653px;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &-image {
+            width: 950px;
         }
     }
 }
