@@ -30,7 +30,7 @@ export default function Home() {
         <Categories title="Découvrez la sélection" />
         <Gallery alt="gallry-img" />
         <Sticky
-          text={`<span className="d-block"> Jusqu'à -40% et 10%</span>supplémentaires avec le code VEEPEEJSM23`}
+          text={`<span className="d-block"> Jusqu'à <span className="Sticky-variant">-40% et 10% </span></span>supplémentaires avec le code <span className="Sticky-variant">VEEPEEJSM23</span>`}
         />
       </main>
     </>

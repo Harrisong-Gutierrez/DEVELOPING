@@ -9622,40 +9622,66 @@ figure {
 .Sticky {
   background-color: #ff8c97;
   display: flex;
+  height: 300px;
   justify-content: center;
-  text-align: center;
-  height: 300px; }
+  text-align: center; }
   .Sticky-text {
-    font-size: 9px;
-    font-family: "Raleway Regular";
     color: #767676;
-    width: 187px;
-    height: auto; }
+    font-family: "Raleway Regular";
+    font-size: 11px;
+    height: auto;
+    width: 187px; }
   .Sticky-main {
-    width: 328px;
-    height: 58px;
-    border-radius: 4px;
+    align-items: center;
     background-color: #fdfefe;
+    border-radius: 4px;
     display: flex;
-    align-items: center;
-    justify-content: center; }
-  .Sticky-content {
-    width: 296px;
-    height: 38px;
-    display: flex;
-    align-items: center;
+    height: 58px;
     justify-content: center;
-    gap: 6px; }
-  .Sticky-button {
-    width: 103px;
+    width: 328px; }
+  .Sticky-content {
+    align-items: center;
+    display: flex;
+    gap: 6px;
     height: 38px;
+    justify-content: center;
+    width: 296px; }
+  .Sticky-button {
+    align-items: center;
     background-color: #ff4747;
     border-radius: 2px;
-    align-items: center;
+    color: #fdfefe;
     display: flex;
+    font-family: "HKGrotesk Bold";
+    height: 38px;
     justify-content: center;
     text-decoration: none;
-    color: #fdfefe;
-    font-family: "HKGrotesk Bold"; }
+    width: 103px; }
+  .Sticky-variant {
+    font-family: "Raleway Bold"; }
+  @media (min-width: 768px) {
+    .Sticky-main {
+      height: 88px;
+      width: 530px; }
+    .Sticky-text {
+      width: 300px; }
+    .Sticky-content {
+      height: 40px;
+      width: 563px; }
+    .Sticky-button {
+      height: 40px;
+      width: 110px; } }
+  @media (min-width: 992px) {
+    .Sticky-main {
+      height: 88px;
+      width: 707px; }
+    .Sticky-text {
+      width: 400px; }
+    .Sticky-content {
+      height: 40px;
+      width: 563px; }
+    .Sticky-button {
+      height: 40px;
+      width: 130px; } }
 
 /*# sourceMappingURL=main.css.map */

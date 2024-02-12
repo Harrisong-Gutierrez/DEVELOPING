@@ -1,47 +1,94 @@
 .Sticky {
     background-color: $pink;
     display: flex;
+    height: 300px;
     justify-content: center;
     text-align: center;
-    height: 300px;
 
     &-text {
-        font-size: 9px;
-        font-family: $fontRaleway;
         color: $green;
-        width: 187px;
+        font-family: $fontRaleway;
+        font-size: 11px;
         height: auto;
+        width: 187px;
     }
 
     &-main {
-        width: 328px;
-        height: 58px;
-        border-radius: 4px;
-        background-color: $white;
-        display: flex;
         align-items: center;
+        background-color: $white;
+        border-radius: 4px;
+        display: flex;
+        height: 58px;
         justify-content: center;
+        width: 328px;
     }
 
     &-content {
-        width: 296px;
-        height: 38px;
-        display: flex;
         align-items: center;
-        justify-content: center;
+        display: flex;
         gap: 6px;
+        height: 38px;
+        justify-content: center;
+        width: 296px;
     }
 
     &-button {
-        width: 103px;
-        height: 38px;
+        align-items: center;
         background-color: $red;
         border-radius: 2px;
-        align-items: center;
+        color: $white;
         display: flex;
+        font-family: $fontHKGroteskBold;
+        height: 38px;
         justify-content: center;
         text-decoration: none;
-        color: $white;
-        font-family: $fontHKGroteskBold;
+        width: 103px;
+    }
+
+    &-variant {
+        font-family: $fontRealwayBold;
+    }
+
+    @include media-breakpoint-up(md) {
+        &-main {
+            height: 88px;
+            width: 530px;
+        }
+
+        &-text {
+            width: 300px;
+        }
+
+        &-content {
+            height: 40px;
+            width: 563px;
+        }
+
+        &-button {
+            height: 40px;
+            width: 110px;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &-main {
+            height: 88px;
+            width: 707px;
+        }
+
+        &-text {
+            width: 400px;
+        }
+
+        &-content {
+            height: 40px;
+            width: 563px;
+        }
+
+        &-button {
+            height: 40px;
+            width: 130px;
+        }
     }
 }
