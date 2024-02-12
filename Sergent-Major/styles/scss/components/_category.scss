@@ -27,14 +27,15 @@
         height: 24px;
     }
 
-    @include media-breakpoint-up(md) { 
+    @include media-breakpoint-up(md) {
         background-size: cover;
     }
 
+
     @include media-breakpoint-up(lg) {
         &-image {
-           width: 220px;
-           height: 278px;
+            width: 220px;
+            height: 278px;
         }
 
         &-text {
@@ -45,6 +46,5 @@
         &-cover {
             background-size: cover;
         }
-        }
-        
+    }
 }
